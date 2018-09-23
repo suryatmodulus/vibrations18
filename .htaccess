@@ -1,1 +1,1 @@
-RewriteEngine on RewriteCond %{REQUEST_URI} !^public RewriteRule ^(.*)$ public/$1 [L]
+RewriteEngine on RewriteCond %{REQUEST_URI} !^public_html RewriteRule ^(.*)$ public/$1 [L]

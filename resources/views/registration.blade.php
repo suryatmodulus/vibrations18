@@ -23,22 +23,22 @@
 
                         <div class="form-group">
                             <label for="name">Full Name :</label>
-                            <input type="text" class="form-control" name="name" placeholder="Enter your Name" required autocomplete="off" autofocus/>
+                            <input type="text" class="form-control" name="name" placeholder="Enter your Name" required autocomplete="off" autofocus="off"/>
                         </div>
 
                         <div class="form-group">
                             <label for="usn">USN (Students only) :</label>
-                            <input type="text" class="form-control" name="usn" placeholder="Faculty can leave this blank" maxlength="15" autocomplete="off"/>
+                            <input type="text" class="form-control" name="usn" placeholder="Faculty can leave this blank" maxlength="15" autocomplete="off" autofocus="off"/>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email :</label>
-                            <input type="email" class="form-control" name="email" placeholder="Enter Email Address"required autocomplete="off"/>
+                            <input type="email" class="form-control" name="email" placeholder="Enter Email Address"required autocomplete="off" autofocus="off"/>
                         </div>
 
                         <div class="form-group">
                             <label for="mobile">Mobile Number :</label>
-                            <input type="number" class="form-control" name="mobile" placeholder="10 digit number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="10" autocomplete="off"/>
+                            <input type="number" class="form-control" name="mobile" placeholder="10 digit number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="10" autocomplete="off" autofocus="off"/>
                         </div>
                         <div class="form-group">
                             <div class="control-group">

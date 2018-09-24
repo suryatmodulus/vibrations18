@@ -7,6 +7,15 @@
             <img class="text-logo img-responsive center-block" src="{{ asset('images/small_text_logo.png') }}" alt="">
         </div>
         <div class="col-md-4 col-md-offset-4">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <div class="panel panel-default">
                 <div class="panel-body">
                     <form method="POST" action="{{ route('registration.store') }}">
@@ -223,10 +232,10 @@
                                 </label>
                                 {{--------}}
                                 <hr>
-                                <div id="selected_events">
+                                <h2>Selected Events :</h2>
+                                <ul id="selected_events">
 
-
-                                </div>
+                                </ul>
                             </div>
                         </div>
 

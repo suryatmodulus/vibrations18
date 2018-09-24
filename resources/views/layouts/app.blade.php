@@ -8,7 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    {{--  <title>{{ config('app.name', 'Laravel') }}</title>  --}}
+    <title>Vibrations18</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -50,6 +51,13 @@
             $this.data().isSubmitted = true;
 
             return true;
+        });
+    </script>
+    
+<!--  Jquery to remove error message on focus -->
+	<script type="text/javascript">
+	    $('input').on('focus',function(){
+            $('.alert').hide();
         });
 	</script>
 

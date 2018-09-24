@@ -21,6 +21,4 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 
 Route::get('/registration', 'RegistrationController@index')->name('registration');
 
-Route::get('/success', 'RegistrationController@success')->name('registration.success');
-
 Route::post('/registration', 'RegistrationController@store')->name('registration.store');

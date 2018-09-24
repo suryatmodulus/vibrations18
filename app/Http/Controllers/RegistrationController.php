@@ -15,9 +15,9 @@ class RegistrationController extends Controller
     public function store(Request $request)
     {
         $data = $this->validate($request, [
-            'name'=>'required',
-            'email'=>'required',
-            'mobile'=> 'required',
+            'name'=>'required|string|max:255',
+            'email'=>'required|email|string|max:255',
+            'mobile'=> 'required|min:10|max:10',
             'events'=> 'required'
         ]);
 
@@ -37,12 +37,6 @@ class RegistrationController extends Controller
             }
         }   
 
-        return redirect('/success')->with('success', 'New support ticket has been created! Wait sometime to get resolved');
+        return view('success')->with('success', 'yes');
     }
-
-    public function success()
-    {
-        return view('success');
-    }
-
 }

@@ -56,7 +56,7 @@
     
 <!--  Jquery to remove error message on focus -->
 	<script type="text/javascript">
-	    $('input').on('change',function(){
+	    $('input').on('input',function(){
             $('.alert').hide();
         });
 	</script>

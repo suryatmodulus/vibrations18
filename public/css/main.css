@@ -14,8 +14,14 @@ body{
   background: linear-gradient(to left, #516395, #614385) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.img-logo{
+.img-logo,.text-logo{
   max-width: 320px;
+}
+
+@media only screen and (max-height: 500px) {
+  .img-logo{
+    max-width: 250px;
+  }
 }
 
 .register-now-btn{

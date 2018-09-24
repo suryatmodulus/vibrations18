@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center">
-            <img class="img-logo img-responsive center-block" src="{{ asset('images/small_text_logo.png') }}" alt="">
+            <img class="text-logo img-responsive center-block" src="{{ asset('images/small_text_logo.png') }}" alt="">
         </div>
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-default">

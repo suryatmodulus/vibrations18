@@ -232,10 +232,10 @@
                                 </label>
                                 {{--------}}
                                 <hr>
-                                <h2>Selected Events :</h2>
+                                <!-- <h2>Selected Events :</h2>
                                 <ul id="selected_events">
 
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
 

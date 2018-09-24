@@ -36,10 +36,13 @@ class RegistrationController extends Controller
                 ]);
             }
         }   
-       
-        //Registration::create($request->all());
 
-        return redirect('/')->with('success', 'New support ticket has been created! Wait sometime to get resolved');
+        return redirect('/success')->with('success', 'New support ticket has been created! Wait sometime to get resolved');
+    }
+
+    public function success()
+    {
+        return view('success');
     }
 
 }

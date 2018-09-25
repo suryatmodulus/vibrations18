@@ -9,7 +9,9 @@
                 <a href="{{route('registration')}}"><button class="sm-register-now-btn">Register Again?</button></a>
             </div>
         @endif
-       
     </div>
+</div>
+<div class="credits">
+    Developed By Surya T
 </div>
 @endsection

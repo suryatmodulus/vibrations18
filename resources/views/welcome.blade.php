@@ -9,4 +9,7 @@
         </div>
     </div>
 </div>
+<div class="credits">
+    Developed By Surya T
+</div>
 @endsection

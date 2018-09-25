@@ -26,9 +26,15 @@ class RegistrationController extends Controller
             if(!empty($event))
             {
                 $cat_eve = explode('|', $event);
+                if($request->input('usn') == ""){
+                    $usn = "NIL";
+                }
+                else{
+                    $usn = $request->input('usn');
+                }
                 Registration::create([
                 'name' => $request->input('name'),
-                'usn' => $request->input('usn'),
+                'usn' => $usn,
                 'email' => $request->input('email'),
                 'mobile' => $request->input('mobile'),
                 'category' => $cat_eve[0],

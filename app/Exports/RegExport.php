@@ -12,6 +12,6 @@ class RegExport implements FromCollection
     */
     public function collection()
     {
-        return Registration::all();
+        return Registration::all('name','usn','email','mobile','category','event','created_at');
     }
 }

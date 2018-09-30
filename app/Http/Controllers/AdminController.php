@@ -32,7 +32,7 @@ class AdminController extends Controller
 
     public function export() 
     {
-        return Excel::download(new RegExport, 'vib18-all-registrations.xlsx');
+        return (new RegExport)->download('vib18-all-registrations.xlsx');
     }
 
     public function exportsheets() 

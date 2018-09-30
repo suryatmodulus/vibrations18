@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin/export', 'AdminController@export')->name('admin_export');
+Route::get('/admin/exportsheets', 'AdminController@exportsheets')->name('admin_exportsheets');
 
 Route::get('/registration', 'RegistrationController@index')->name('registration');
 

@@ -13,8 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <a href="/admin/export"><button class="btn btn-primary">Export All</button></a>
+                    <a href="/admin/exportsheets"><button class="btn btn-primary">Export Sheets</button></a>
                 </div>
             </div>
         </div>

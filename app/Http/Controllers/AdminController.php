@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Exports\RegExport;
+use App\Exports\RegExportSheets;
+use Maatwebsite\Excel\Facades\Excel;
+
 class AdminController extends Controller
 {
     /**
@@ -24,5 +28,15 @@ class AdminController extends Controller
     public function index()
     {
         return view('admin');
+    }
+
+    public function export() 
+    {
+        return Excel::download(new RegExport, 'vib18-all-registrations.xlsx');
+    }
+
+    public function exportsheets() 
+    {
+        return (new RegExportSheets)->download('vib18-sheets.xlsx');
     }
 }
